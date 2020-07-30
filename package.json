@@ -1,6 +1,6 @@
 {
   "name": "@al-ecomm/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npm module for easier code sharing and reuse for one of the projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
