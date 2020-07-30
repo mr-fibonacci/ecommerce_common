@@ -1,0 +1,38 @@
+{
+  "name": "@al-ecomm/common",
+  "version": "1.0.0",
+  "description": "npm module for easier code sharing and reuse for one of the projects",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "omgwhattodo": "echo 1] git add . git commit -m !!!; echo 2] increment package version: npm version patch; echo 3] clear build folder: del ./build/*; echo 4] transpile to js into ./build: tsc; echo 5] publish to npm: npm publish",
+    "build": "del ./build/* && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-fibonacci/ecommerce_common.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mr-fibonacci/ecommerce_common/issues"
+  },
+  "homepage": "https://github.com/mr-fibonacci/ecommerce_common#readme",
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/cookie-session": "^2.0.41",
+    "@types/express": "^4.17.7",
+    "@types/jsonwebtoken": "^8.5.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
