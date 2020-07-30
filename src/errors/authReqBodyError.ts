@@ -1,10 +1,10 @@
-import CustomError from './customError';
+import { CustomError } from './customError';
 import { ValidationError } from 'express-validator';
 
-export default class authReqBodyError extends CustomError {
+export class AuthReqBodyError extends CustomError {
   constructor(public errors: ValidationError[]) {
     super('message(s) will be provided by express validator');
-    Object.setPrototypeOf(this, authReqBodyError.prototype);
+    Object.setPrototypeOf(this, AuthReqBodyError.prototype);
   }
 
   statusCode = 422;

@@ -1,6 +1,6 @@
 import { body } from 'express-validator';
 
-export default [
+export const validateAuthReqBody = [
   body('email').isEmail().withMessage('Invalid email'),
   body('password')
     .trim()
